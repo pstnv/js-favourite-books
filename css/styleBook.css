@@ -1,0 +1,430 @@
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  min-height: 100%;
+  background: -webkit-linear-gradient(top, #ffffff 26%,#ffffff 39%,#ffffff 41%,#ffffff 41%,#ffffff 42%,#f6f6f6 59%,#e1e1e1 77%,#f1f1f1 100%,#ffffff 100%);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  margin:0;
+  word-wrap: break-word;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: rgb(68, 73, 65, 0.5);
+  color: white;
+}
+*::selection {
+  background-color: rgb(68, 73, 65, 0.5);
+  color: white;
+}
+*:focus,
+*:active {
+  outline: none;
+}
+
+/************MAIN*************/
+.mainHeader {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;  
+}
+.quoteHeader {
+  font-family: 'Caveat', cursive;
+  font-size: 26px;
+  color: #BD4B4B;
+  /* text-align:justify; */
+}
+.quoteHeader p {
+  margin: 0;
+}
+.linkHeader {
+  margin: 5px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.linkIcon {
+  fill: #433520;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+/************HEADER*************/
+.header {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+h1 {
+  margin: 0px 20px;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.1;
+  /* font-size: 46px; */
+  font-family: 'Caveat', cursive;
+  color: rgb(67, 53, 32, 0.8);
+}
+/************DESCRIPTION*************/
+.container {
+  padding: 20px;
+}
+.cover {
+  padding-top: 10px;
+  padding-right: 20px;
+  float:left;
+}
+.imageCover {
+  max-height:350px; 
+  border: 1px solid #444941;
+}
+.bookDescription p {
+  margin: 0px;
+  text-align: justify;
+  line-height: 2;
+  font-size: 18px;
+  text-indent: 30px;
+}
+.clearfix {
+  clear:both;
+}
+hr {
+  margin-bottom: 10px;
+  width: 98%;
+  border: 1px outset rgb(68, 73, 65, 0.5);
+  height: 3px;
+}
+/************ADAPTATION*************/
+.media {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.adaptation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex:3;
+      -ms-flex:3;
+          flex:3;
+}
+h2 {
+  margin: 25px 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #BD4B4B;
+}
+.movies {
+  width: 100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.oneMovie {
+  max-width: 25%;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  border: 1px solid rgb(68, 73, 65, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.imageMovie {
+  -webkit-filter: sepia(0.5);
+          filter: sepia(0.5);
+  width: 100%;
+}
+
+.headerMovie {
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgb(68, 73, 65, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+h3 {
+  font-size: 13px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.trailer {
+  max-width: 75%;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  border: 1px solid rgb(68, 73, 65, 0.5);
+}
+.video {
+  width: 100%;
+  height: 100%;
+}
+.height {
+  height: 370px;
+}
+/************AUTHOR*************/
+
+.aboutAuthor {  
+  -webkit-box-flex: 2;  
+      -ms-flex: 2;  
+          flex: 2;
+  padding: 10px;
+  border-top: 1px solid rgb(189, 75, 75, 0.2);
+  border-left: 1px solid rgb(189, 75, 75, 0.2); 
+  -webkit-box-shadow: 3px 3px 7px rgb(189, 75, 75, 0.5); 
+          box-shadow: 3px 3px 7px rgb(189, 75, 75, 0.5);
+
+}
+.author {
+  padding-top: 10px;
+  padding-right: 10px;
+  float:left;
+}
+.imageAuthor {
+  width: 100px;
+}
+.biography p {
+  margin:0px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+  text-indent: 30px;
+}
+.nameAuthor {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  font-weight: bold;  
+  color: rgb(67, 53, 32, 0.8);
+}
+
+
+/************FOOTER*************/
+footer { 
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; 
+}
+
+.linkFooter {
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 21px;
+  color: rgb(67, 53, 32, 0.8);
+}
+
+
+@media (any-pointer: fine) and (any-hover: hover) {
+  
+/*всплывающая подсказка на кнопки - начало*/
+[data-title] {
+  position: relative;
+}
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -3em;
+  /* right: 0%; */
+  padding: 4px 4px 4px 8px;
+  color: #BD4B4B;
+  white-space: nowrap;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 4px #BD4B4B;
+          box-shadow: 0px 0px 4px #BD4B4B;
+  opacity: 0;
+  z-index: 10;
+  visibility: hidden;
+  font-size: 12px;
+  background-color: none;
+}
+[data-title]:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+/*всплывающая подсказка на кнопки - конец*/
+
+/************FOOTER*************/
+.linkFooter:hover {
+  text-shadow: 2px 2px 4px rgb(189, 75, 75, 0.4);
+}
+}
+
+
+
+@media all and (max-width:1200px) {
+  /************DESCRIPTION*************/
+  .bookDescription p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  /************ADAPTATION*************/
+  .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  /************AUTHOR*************/
+  .aboutAuthor {
+    margin-top: 30px;
+  }
+  .biography p {
+    font-size: 14px;
+  }
+  .nameAuthor {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width:600px) {
+  /************ADAPTATION*************/
+h2 {
+  margin: 15px 0;
+}
+  .movies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .oneMovie {
+    margin: 15px 0;
+    max-width: 100%;
+  }
+  .trailer {
+    -webkit-box-flex:unset;
+        -ms-flex:unset;
+            flex:unset;
+    max-width: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video {
+    min-height: 250px;
+  }
+}
+
+@media all and (max-width:500px) {
+
+  /************MAIN*************/
+  .quoteHeader {
+    font-size: 20px;
+  }
+  .linkHeader {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+  }
+  /************HEADER*************/
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1 {
+    margin: 0px;
+    font-size: 40px;
+  }
+  /************DESCRIPTION*************/
+  .cover {
+    margin-bottom: 20px;
+    padding: 0;
+    float:initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imageCover {
+    max-height:unset;
+    /* max-width: 260px; */
+    max-width: 100%;
+  }
+  /************ADAPTATION*************/
+  .height {
+    height: 250px;
+  }
+  /************FOOTER*************/
+  .linkFooter {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,223 @@
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*::-moz-selection {
+  background-color: rgb(68, 73, 65, 0.5);
+  color: white;
+}
+
+*::selection {
+  background-color: rgb(68, 73, 65, 0.5);
+  color: white;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+/* СТАРТ СТРАНИЦЫ ВХОДА */
+.body_entry {
+  background: none;
+  margin:0;
+  margin: 0px;
+}
+.div_entry {
+  width: 100vw;
+  max-width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-orient: horizontal;  
+  -webkit-box-direction: reverse;  
+      -ms-flex-direction: row-reverse;  
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.div_hover {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-pack: start;  
+      -ms-flex-pack: start;  
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.div_arrow {
+  width: 30%;
+  padding-right: 3%;
+  margin-top: 1%;
+}
+.arrow {
+  width: 100%;
+}
+.div_rabbit {
+  width:65%;
+}
+.rabbit {
+  width:100%;
+}
+.a_follow {
+  width: 30%;
+}
+.btn_follow {
+  border: 2px solid #BD4B4B;
+  background-color: unset;
+  border-radius: 70px;
+  font-size: calc(12px + 1.7vw);
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+  color: #BD4B4B;
+  padding: 7%;
+  max-height: 80%;
+  width: 85%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn_follow:hover {
+  width:101%;
+  border-radius: 0px;
+  background-color: #BD4B4B;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+.div_hover:hover ~ .a_follow .btn_follow {
+  width:101%;
+  border-radius: 0px;
+  background-color: #BD4B4B;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+/* КОНЕЦ СТРАНИЦЫ ВХОДА */
+
+
+/* НАЧАЛО ФОРМАТИРОВАНИЯ ДЛЯ УСТРОЙСТВ С УКАЗАТЕЛЯМИ */
+
+@media (any-pointer: fine) and (any-hover: hover) {
+  /* СТАРТ СТРАНИЦЫ ВХОДА */
+.btn_follow:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.div_hover:hover ~ .a_follow .btn_follow {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* КОНЕЦ СТРАНИЦЫ ВХОДА */
+}
+/* КОНЕЦ ФОРМАТИРОВАНИЯ ДЛЯ УСТРОЙСТВ С УКАЗАТЕЛЯМИ */
+
+@media all and (max-width:800px) {  
+  .btn_follow:hover {
+    width:101%;
+    border-radius: 0px;
+    background-color: #BD4B4B;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }    
+  .btn_follow:active {
+    width:101%;
+    border-radius: 0px;
+    background-color: #BD4B4B;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+  }  
+  .div_hover:hover ~ .a_follow .btn_follow {
+    width:101%;
+    border-radius: 0px;
+    background-color: #BD4B4B;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+  }  
+  .div_hover:active ~ .a_follow .btn_follow {
+    width:101%;
+    border-radius: 0px;
+    background-color: #BD4B4B;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+  }
+}
+/* АДАПТАЦИЯ ПЛАНШЕТ - КОНЕЦ */ 
+
+
+
+
+/* АДАПТАЦИЯ ТЕЛЕФОН, КНИЖНАЯ - СТАРТ */ 
+@media all and (max-width:500px) {
+  /* СТАРТ СТРАНИЦЫ ВХОДА */
+.div_entry {
+  height: 70vh;
+}
+.a_follow {
+  width: 40%;
+}
+.btn_follow {
+  font-size: calc(12px + 1.4vw);
+  padding: 7% 5% 7% 5%;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn_follow:hover {
+  width:101%;
+  border-radius: 0px;
+  background-color: #BD4B4B;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}  
+.btn_follow:active {
+  width:101%;
+  border-radius: 0px;
+  background-color: #BD4B4B;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}  
+.div_hover {
+  width: 50%;
+}  
+/* КОНЕЦ СТРАНИЦЫ ВХОДА */
+}
+/* АДАПТАЦИЯ ТЕЛЕФОН, КНИЖНАЯ - КОНЕЦ */
+@media (max-width:580px) and (orientation:landscape) {
+.div_entry {
+    height: 90vh;
+}
+}
+
+
+@media all and (max-width:330px) {  
+.div_entry {
+  height: 90vh;
+}
+.btn_follow {
+  font-size: calc(10px + 0.8vw);
+  padding: 4% 3% 4% 3%;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+}

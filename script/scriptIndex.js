@@ -1,0 +1,1 @@
+gsap.from(".rabbit", {x: 500, rotation: 180, duration: 1.5, opacity: 0})

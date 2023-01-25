@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru" ontouchmove>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Мои любимые книги </title>
+        <link rel="stylesheet" href="styleMain.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body onclick>
+        <!-- Sprite -->
+        <svg style="display:none;">
+            <symbol id="logoHome" viewbox="0 0 24 24">
+                <g>
+                    <path d="M19.07,4.93C17.22,3 14.66,1.96 12,2C9.34,1.96 6.79,3 4.94,4.93C3,6.78 1.96,9.34 2,12C1.96,14.66 3,17.21 4.93,19.06C6.78,21 9.34,22.04 12,22C14.66,22.04 17.21,21 19.06,19.07C21,17.22 22.04,14.66 22,12C22.04,9.34 21,6.78 19.07,4.93M17,12V18H13.5V13H10.5V18H7V12H5L12,5L19.5,12H17Z" />
+                </g>
+            </symbol>
+        </svg>
+        <!-- MAIN -->
+        <div class="main">
+            <div class="mainHeader">
+                <div class="quoteHeader">
+                    <p> «Когда вы читаете, не пытайтесь угадывать, что думает автор. Думайте сами»                      
+                    </p> 
+                    <p class = "sourceHeader"> («Общество мёртвых поэтов»)
+                    </p> 
+
+                </div>               
+                <a class="linkHeader"  data-title="Покинуть сайт" href="index.html">
+                    <svg class="linkIcon">
+                        <use xlink:href="#logoHome"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <h1 class="h1"> Книги, которые вдохновляют</h1>
+        </div>
+        <!-- SEARCH -->
+        <div class="search">
+            <!-- <div class="container"> -->
+                <div class="searchInput">
+                    <input id="inputForm" type="text" placeholder="Введите название книги/автора">
+                </div>
+            <!-- </div> -->
+        </div>
+        <!-- LIBRARY -->
+        <div class="container">
+            <div class="library">
+                <a class="oneBook" data-author="Джек Лондон" href="page_WhiteFang.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Белый клык </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_WhiteFang.png?v=1645814555968">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Джек Лондон" href="page_MartinEden.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Мартин Иден  </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_MartinEden.png?v=1645814679207">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Вениамин Каверин" href="page_TwoCaptains.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Два капитана </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_TwoCaptains.png?v=1645814547069">
+                        </div>
+                </a>
+
+                
+                <a class="oneBook" data-author="Иэн Макьюэн" href="page_Atonement.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Искупление </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_atonement.png?v=1645814478221">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Джером Сэлинджер" href="page_TheCatcher.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Над пропастью во ржи</h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_TheCathcer.png?v=1645814537942">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Диана Гэблдон" href="page_Outlander.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Чужестранка </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_Outlander.png?v=1645814517325">
+                        </div>
+                </a>
+                
+                <a class="oneBook" data-author="Джордж Мартин" href="page_GoT.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Песнь льда и огня </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_GoT.png?v=1645814494294">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Эмили Бронте" href="page_Heights.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Грозовой перевал </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_Heights.png?v=1645814499706">
+                        </div>
+                </a>                
+                <a class="oneBook" data-author="Габриэль Гарсиа Маркес" href="page_OneHundredYears.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Сто лет одиночества </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_OneHundredYears.png?v=1645814942864">
+                        </div>
+                </a>
+
+                <a class="oneBook" data-author="Джейн Остин" href="page_Pride.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Гордость и предубеждение  </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_pride.png?v=1645814525367">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Герман Мелвилл" href="page_MobyDick.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Моби Дик </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_MobyDick.png?v=1645814509437">
+                        </div>
+                </a>
+                <a class="oneBook" data-author="Четыре пера" href="page_FourFeathers.html">
+                        <div class="bookHeader">
+                            <h3 class="h3"> Четыре пера  </h3>
+                        </div>
+                        <div class="bookCover">
+                            <img class="bookImage grayscale" src="https://cdn.glitch.global/4fd356b1-0ccc-4820-9849-6a169c784a3d/book_Feathers.png?v=1645814484469">
+                        </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer>
+            <hr>
+            <a class="linkFooter" href="mailto:pstnv@mail.ru" target="_blank"> Все материалы и фотографии использованы в учебных целях </a>
+        </footer>
+        
+
+        <script src = "script.js"> </script>
+    </body>
+</html>
