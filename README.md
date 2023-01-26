@@ -2,7 +2,7 @@
 <a href="https://pstnv-favourite-books.glitch.me/"> https://pstnv-favourite-books.glitch.me </a>
 
 <div align="center">
-  <img src="https://pstnv.github.io/preview/picPreview_6.png">
+  <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/picPreview_6.png?v=1661081038379">
 </div>
 <br>
 
